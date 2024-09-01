@@ -1,0 +1,107 @@
+*,
+html,
+body 
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  
+  
+  
+
+
+
+:root {
+ --bg-primary : rgb(223, 206, 206);
+ --bg-secondary:rgba(75, 69, 67, 0.411);
+ --txt-primary:#f7f7f7;
+ --txt-secondary:#222222;
+ --icons-bg-primary:tomato;
+ --icons-bg-secondary:green;
+
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: var(--bg-primary)
+}
+
+.afk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+   align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 1px solid white;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(68, 28, 28);
+}
+
+.huh {
+     text-align: center;
+}
+
+.icons {
+    font-size: 50px;
+    color: var(--icons-bg-secondary);
+    margin-top: 8px;
+
+}
+
+.title {
+    font-size: 2em;
+    
+}
+
+.description {
+    font-size: .5em;
+    margin-top: 8px;
+}
+
+.btn {
+    margin-top: 216px;
+    padding: 8px;
+    background-color: green;
+    color: aliceblue;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    transition:  .3s ease-in-out;
+}
+
+@media screen and (max-width: 476px) {
+    .container {
+        background-color: var(--bg-secondary);
+    }
+    
+    .card {
+        width: 95%;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .description{
+        font-size: 1.5em;
+    }
+    
+    .btn {
+        padding: 16px;
+    }
+}
